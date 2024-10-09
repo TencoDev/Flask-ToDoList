@@ -1,0 +1,80 @@
+body {
+  font-family: "Verdana", Geneva, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #F7FAFC;
+}
+
+.content {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.content h1 {
+  color: #2D3748;
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+.content h4 {
+  color: #2D3748;
+  font-size: 1.5em;
+  margin-bottom: 20px;
+}
+.content table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+.content table th, .content table td {
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  text-align: left;
+}
+.content table th {
+  background-color: #5A67D8;
+  color: white;
+}
+.content table td {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.content table a {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #5A67D8;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.content table a:hover {
+  background-color: #4C51BF;
+  transform: scale(1.05);
+}
+.content input {
+  padding: 10px;
+  margin: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+.content input:focus {
+  border-color: #48BB78;
+  outline: none;
+}
+.content #btn-add {
+  background-color: #48BB78;
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+.content #btn-add:hover {
+  background-color: #38A169;
+}/*# sourceMappingURL=styles.css.map */

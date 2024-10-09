@@ -1,0 +1,101 @@
+// Color Variables
+
+$primary_color: #5A67D8;         // Soft Indigo
+$primary_hover_color: #4C51BF;   // Darker Indigo
+$success_color: #48BB78;         // Fresh Green
+$success_hover_color: #38A169;   // Darker Green
+$title_color: #2D3748;           // Deep Slate
+$background_color: #F7FAFC;      // Light Grayish Blue
+
+body {
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif; // Clean font
+    margin: 0;
+    padding: 0;
+    background-color: $background_color; // Set background color
+}
+
+.content {
+    max-width: 800px; // Limit the max width for better readability
+    margin: 50px auto; // Center content
+    padding: 20px; // Padding for content
+    background-color: white; // White background for contrast
+    border-radius: 10px; // Rounded corners
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    text-align: center; // Center text for a neat look
+
+    h1 {
+        color: $title_color; // Title color
+        font-size: 2.5em; // Increase title size for prominence
+        margin-bottom: 10px; // Space below the title
+    }
+
+    h4 {
+        color: $title_color; // Subheading color
+        font-size: 1.5em; // Slightly larger subheading
+        margin-bottom: 20px; // Space below subheading
+    }
+
+    table {
+        width: 100%; // Full-width table
+        margin-top: 20px; // Space above table
+        border-collapse: collapse; // Remove gaps between cells
+
+        th, td {
+            padding: 10px; // Cell padding for better spacing
+            border: 2px solid black; // Black border for cells
+            border-radius: 5px; // Rounded corners for cells
+            text-align: left; // Left-align text for better readability
+        }
+
+        th {
+            background-color: $primary_color; // Primary color for header
+            color: white; // White text for contrast
+        }
+
+        td {
+            background-color: rgba(0, 0, 0, 0.05); // Light background for cells
+        }
+
+        a {
+            display: inline-block; // Block display for link
+            padding: 8px 16px; // Button padding
+            margin: 5px; // Margin between buttons
+            border-radius: 5px; // Rounded button corners
+            background-color: $primary_color; // Primary button color
+            color: white; // Button text color
+            text-decoration: none; // Remove underline
+            transition: background-color 0.3s ease, transform 0.2s ease; // Smooth transition
+
+            &:hover {
+                background-color: $primary_hover_color; // Change on hover
+                transform: scale(1.05); // Slightly scale on hover
+            }
+        }
+    }
+
+    input {
+        padding: 10px; // Padding for input fields
+        margin: 5px; // Margin for spacing
+        border: 2px solid black; // Black border for input
+        border-radius: 5px; // Rounded corners
+        transition: border-color 0.3s ease; // Smooth border transition
+
+        &:focus {
+            border-color: $success_color; // Change border color on focus
+            outline: none; // Remove outline
+        }
+    }
+
+    #btn-add {
+        background-color: $success_color; // Success button color
+        color: white; // Button text color
+        cursor: pointer; // Pointer cursor on hover
+        border: none; // No border for button
+        padding: 10px 15px; // Button padding
+        border-radius: 5px; // Rounded button corners
+
+        &:hover {
+            background-color: $success_hover_color; // Change on hover
+        }   
+    }
+}
